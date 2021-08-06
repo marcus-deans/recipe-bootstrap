@@ -1,0 +1,24 @@
+{
+  "name": "recipe-bootstrap",
+  "version": "1.0.0",
+  "description": "Bootstrap web app trial",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcus-deans/recipe-bootstrap.git"
+  },
+  "author": "Marcus Deans",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcus-deans/recipe-bootstrap/issues"
+  },
+  "homepage": "https://github.com/marcus-deans/recipe-bootstrap#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
