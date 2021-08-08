@@ -30,7 +30,8 @@
                     <li class = "nav-item"><a class = "nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact </a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <!-- <a data-toggle="modal" data-target="#loginModal"> -->
+                    <a id="loginButton" role="button">
                         <span class="fa fa-sign-in"></span> Login
                     </a>
                 </span>
@@ -141,7 +142,8 @@
                         <img src="img/logo.png" class="img-fluid">
                     </div>
                     <div class="col-12 col-sm-6 align-self-center">
-                        <a class="btn btn-warning col-12 col-sm-8" data-toggle=modal data-target="#reservationModal" role="button"> Reserve Table</a>
+                        <a class = "btn btn-warning col-12 col-sm-8" id="reservationButton" role="button">Reserve Table</a>
+                        <!-- <a class="btn btn-warning col-12 col-sm-8" data-toggle=modal data-target="#reservationModal" role="button"> Reserve Table</a> -->
                         <!-- <button type = "submit" class="btn btn-warning col-8"> Reserve Table </button> -->
                         <!-- data-toggle="tooltip" data-html="true" -->
                         <!-- title="Or call us at <br><strong>+852 12345678</strong>" -->
@@ -296,23 +298,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('#mycarousel').carousel({ interval:2000});
-            $('#carouselButton').click(function(){
-                if($('#carouselButton').children('span').hasClass('fa-pause')){
-                    $('#mycarousel').carousel('pause');
-                    $('#carouselButton').children('span').removeClass('fa-pause');
-                    $('#carouselButton').children('span').addClass('fa-play');
-                } else {
-                    $('#mycarousel').carousel('cycle');
-                    $('#carouselButton').children('span').removeClass('fa-play');
-                    $('#carouselButton').children('span').addClass('fa-pause');
-                }
-            });
-        });
-    </script>
-
+    <script src="js/scripts.js"></script>
     <!-- <script>
         $(document).ready(function(){
             $('[data-toggle="tooltip"]').tooltip();
