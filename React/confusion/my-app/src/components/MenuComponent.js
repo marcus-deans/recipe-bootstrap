@@ -20,14 +20,15 @@ const Menu = (props) => {
             </div>
         )
     });
-}
-    
-return (
-    <div className="container">
-        <div className="row">
-            {menu}
+
+    return (
+        <div className="container">
+            <div className="row">
+                {menu}
+            </div>
         </div>
-    </div>
-);
+    );
+}
+
 
 export default Menu;
